@@ -1,0 +1,66 @@
+/* Shared Auth Styles */
+
+.auth-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, hsl(237, 53%, 52%), #8f94fb);
+    background-size: cover;
+    background-position: center;
+  }
+  .auth-card {
+    background: rgba(78, 84, 200, 0.8); /* Use rgba for transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  
+  .auth-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white; /* Title color */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white; /* Label color */
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .btn-primary {
+    background:  #101349; /* Button background color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background: #8f94fb; /* Button background color on hover */
+  }
+  

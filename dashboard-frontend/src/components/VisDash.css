@@ -1,0 +1,99 @@
+.vis-dash {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  height: 80px;
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.visdash-logo {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  transform: skew(-10deg);
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+}
+
+.visdash-logo::before {
+  content: 'VisDash';
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  z-index: -1;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filters label {
+  margin: 0 10px;
+}
+
+.filters select,
+.filters input {
+  padding: 8px;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.charts-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.chart-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 45%; /* Default width for Bar and Line charts */
+  margin-bottom: 10px;
+}
+
+.chart-card-big {
+  width: 80%; /* Full width for big Bar and Line charts */
+}
+
+/* Adjustments for the last four cards */
+@media (max-width: 768px) {
+  .chart-card {
+    width: 80%; /* Full width on smaller screens */
+  }
+}
+
+/* Copyright text */
+.footer {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
